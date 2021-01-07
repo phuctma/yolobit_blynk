@@ -1,2 +1,2 @@
-# yolobit_blynk
-Yolo:Bit extension for connecting to Blynk platform
+# Yolo:Bit Blynk
+Extension library for Blynk support for Yolo:Bit.

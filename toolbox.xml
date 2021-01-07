@@ -1,0 +1,38 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category id="ble" name="BLYNK" colour="#00A06B" icon="mobile alternate">
+	  <block type="connect_blynk">
+      <value name="wifi">
+          <shadow type="text"><field name="TEXT">wifi</field></shadow>
+      </value>
+      <value name="password">
+          <shadow type="text"><field name="TEXT">password</field></shadow>
+      </value>
+      <value name="auth_key">
+          <shadow type="text"><field name="TEXT">mã xác thực</field></shadow>
+      </value>
+    </block>
+    <block type="on_app_pin_write"></block>
+    <block type="update_pin">
+      <value name="VALUE">
+          <shadow type="math_number"><field name="NUM">1234</field></shadow>
+      </value>
+    </block>
+    <block type="notify">
+      <value name="message">
+          <shadow type="text"><field name="TEXT">nội dung thông báo</field></shadow>
+      </value>
+    </block>
+    <block type="email">
+      <value name="Email">
+          <shadow type="text"><field name="TEXT">test@test.com</field></shadow>
+      </value>
+      <value name="Subject">
+          <shadow type="text"><field name="TEXT">Tiêu đề</field></shadow>
+      </value>
+      <value name="Body">
+          <shadow type="text"><field name="TEXT">Nội dung email</field></shadow>
+      </value>
+    </block>
+    <block type="blynk_run"></block>
+  </category>
+</xml>
