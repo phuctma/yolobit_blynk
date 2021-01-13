@@ -27,6 +27,8 @@ Blockly.Blocks['on_app_pin_write'] = {
         .appendField(new Blockly.FieldDropdown([["V1","V1"], ["V2","V2"], ["V3","V3"], ["V4","V4"], ["V5","V5"], ["V6","V6"], ["V7","V7"], ["V8","V8"], ["V9","V9"], ["V10","V10"], ["V11","V11"], ["V12","V12"], ["V13","V13"], ["V14","V14"], ["V15","V15"], ["V16","V16"]]), "Pin");
     this.appendStatementInput("handler")
         .setCheck(null);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour('#00A06B');
  this.setTooltip("");
  this.setHelpUrl("");
@@ -113,7 +115,6 @@ Blockly.Python['connect_blynk'] = function(block) {
   return '';
 };
 
-
 Blockly.Python['on_app_pin_write'] = function(block) {
   var dropdown_v = block.getFieldValue('Pin');
   var variable_value = Blockly.Python.variableDB_.getName(block.getFieldValue('VALUE'), Blockly.Variables.NAME_TYPE);
@@ -121,7 +122,7 @@ Blockly.Python['on_app_pin_write'] = function(block) {
   // TODO: Assemble Python into code variable.
   var cbFunctionName = Blockly.Python.provideFunction_(
     'write_pin_handler_' + dropdown_v,
-    ['@blynk.handle_event(\'write ' + dropdown_v + '\')\n' +
+    [ '@blynk.handle_event(\'write ' + dropdown_v + '\')\n' +
       'def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '(vpin, ' + variable_value +  '):\n' +
       Blockly.Python.INDENT + variable_value + ' = '+ variable_value + '[0]\n' +
       Blockly.Python.INDENT + 'try:\n' +
