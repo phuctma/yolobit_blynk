@@ -372,7 +372,7 @@ class Blynk(Connection):
             except Exception as g_exc:
                 self.log(g_exc)
 
-def connect(ssid, password, auth_key):
+def connect(ssid, password, auth_key, server='blynk-cloud.com', port=80):
     station = network.WLAN(network.STA_IF)
     station.active(True)
     station.connect(ssid, password)
@@ -383,4 +383,4 @@ def connect(ssid, password, auth_key):
     print('Connected to Wifi')
     print('IP address: ')
     print(station.ifconfig())
-    return Blynk(auth_key)
+    return Blynk(auth_key, server=server, port=port)
