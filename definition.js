@@ -119,6 +119,20 @@ Blockly.Python['on_app_pin_write'] = function(block) {
   var dropdown_v = block.getFieldValue('Pin');
   var variable_value = Blockly.Python.variableDB_.getName(block.getFieldValue('VALUE'), Blockly.Variables.NAME_TYPE);
   var statements_action = Blockly.Python.statementToCode(block, 'handler');
+
+  //Global variables except local variable
+  var globals = [];
+  var varName;
+  var variables = block.workspace.getAllVariables() || [];
+
+  for (var i = 0, variable; variable = variables[i]; i++) {
+    varName = Blockly.Python.variableDB_.getName(variable.name,Blockly.Variables.NAME_TYPE);
+    if (varName != variable_value){
+      globals.push(varName);
+    }
+  }
+  globals = globals.length ? Blockly.Python.INDENT + 'global ' + globals.join(', ') : '';
+  
   // TODO: Assemble Python into code variable.
   var cbFunctionName = Blockly.Python.provideFunction_(
     'write_pin_handler_' + dropdown_v,
