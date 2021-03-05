@@ -136,8 +136,9 @@ Blockly.Python['on_app_pin_write'] = function(block) {
   // TODO: Assemble Python into code variable.
   var cbFunctionName = Blockly.Python.provideFunction_(
     'write_pin_handler_' + dropdown_v,
-    [ '@blynk.handle_event(\'write ' + dropdown_v + '\')\n' +
-      'def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '(vpin, ' + variable_value +  '):\n' +
+    ['@blynk.handle_event(\'write ' + dropdown_v + '\')\n' +
+      'def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '(vpin, ' + variable_value +  '):',
+      globals,
       Blockly.Python.INDENT + variable_value + ' = '+ variable_value + '[0]\n' +
       Blockly.Python.INDENT + 'try:\n' +
       Blockly.Python.INDENT + Blockly.Python.INDENT + variable_value + ' = float(' + variable_value + ')\n' +
