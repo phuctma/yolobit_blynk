@@ -1,100 +1,297 @@
-Blockly.Blocks['connect_blynk'] = {
+Blockly.Blocks['yolobit_blynk_connect'] = {
   init: function() {
-    this.appendValueInput("wifi")
-        .setCheck(null)
-        .appendField("kết nối Blynk với wifi");
-    this.appendValueInput("password")
-        .setCheck(null)
-        .appendField("password");
-    this.appendValueInput("auth_key")
-        .setCheck(null)
-        .appendField("mã xác thực");
-    this.appendDummyInput();
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour('#00A06B');
- this.setTooltip("");
- this.setHelpUrl("");
+    this.jsonInit({
+    "type": "yolobit_blynk_connect",
+    "message0": 
+    Blockly.Msg.YOLOBIT_BLYNK_CONNECT_MESSAGE0,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "wifi"
+        },
+        {
+          "type": "input_value",
+          "name": "password"
+        },
+        {
+          "type": "input_value",
+          "name": "auth_key"
+        },
+        {
+          "type": "input_dummy"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": "#00A06B",
+      "tooltip":
+        Blockly.Msg.YOLOBIT_BLYNK_CONNECT_TOOLTIP,
+      "helpUrl": 
+        Blockly.Msg.YOLOBIT_BLYNK_CONNECT_HELPURL
+    });
   }
 };
 
-Blockly.Blocks['on_app_pin_write'] = {
+Blockly.Blocks['yolobit_blynk_app_pin_write'] = {
   init: function() {
-    this.appendDummyInput()
-        .appendField("khi app cập nhật ")
-        .appendField(new Blockly.FieldVariable("giá trị"), "VALUE")
-        .appendField("cho")
-        .appendField(new Blockly.FieldDropdown([["V1","V1"], ["V2","V2"], ["V3","V3"], ["V4","V4"], ["V5","V5"], ["V6","V6"], ["V7","V7"], ["V8","V8"], ["V9","V9"], ["V10","V10"], ["V11","V11"], ["V12","V12"], ["V13","V13"], ["V14","V14"], ["V15","V15"], ["V16","V16"]]), "Pin");
-    this.appendStatementInput("handler")
-        .setCheck(null);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour('#00A06B');
- this.setTooltip("");
- this.setHelpUrl("");
+    this.jsonInit({
+    "type": "yolobit_blynk_app_pin_write",
+    "message0": Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_MESSAGE0,
+    "args0": [
+      {
+        "type": "field_variable",
+        "name": "value",
+        "variable": Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_MESSAGE1
+      },
+      {
+        "type": "field_dropdown",
+        "name": "pin",
+        "options": [
+          [
+            "V1",
+            "V1"
+          ],
+          [
+            "V2",
+            "V2"
+          ],
+          [
+            "V3",
+            "V3"
+          ],
+          [
+            "V4",
+            "V4"
+          ],
+          [
+            "V5",
+            "V5"
+          ],
+          [
+            "V6",
+            "V6"
+          ],
+          [
+            "V7",
+            "V7"
+          ],
+          [
+            "V8",
+            "V8"
+          ],
+          [
+            "V9",
+            "V9"
+          ],
+          [
+            "V10",
+            "V10"
+          ],
+          [
+            "V11",
+            "V11"
+          ],
+          [
+            "V12",
+            "V12"
+          ],
+          [
+            "V13",
+            "V13"
+          ],
+          [
+            "V14",
+            "V14"
+          ],
+          [
+            "V15",
+            "V15"
+          ],
+          [
+            "V16",
+            "V16"
+          ]
+        ]
+      },
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "handler"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": '#00A06B',
+    "tooltip": Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_TOOLTIP,
+    "helpUrl": Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_HELPURL
+    });
   }
 };
 
-
-Blockly.Blocks['update_pin'] = {
+Blockly.Blocks['yolobit_blynk_update_pin'] = {
   init: function() {
-    this.appendValueInput("VALUE")
-        .setCheck(null)
-        .appendField("cập nhập ")
-        .appendField(new Blockly.FieldDropdown([["V1","1"], ["V2","2"], ["V3","3"], ["V4","4"], ["V5","5"], ["V6","6"], ["V7","7"], ["V8","8"], ["V9","9"], ["V10","10"], ["V11","11"], ["V12","12"], ["V13","13"], ["V14","14"], ["V15","15"], ["16","16"]]), "Pin")
-        .appendField("giá trị")
-    this.appendDummyInput();
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour('#00A06B');
- this.setTooltip("");
- this.setHelpUrl("");
+    this.jsonInit({
+      "type": "yolobit_blynk_update_pin",
+      "message0": Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_MESSAGE0,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "pin",
+          "options": [
+            [
+              "V0",
+              "0"
+            ],
+            [
+              "V1",
+              "1"
+            ],
+            [
+              "V2",
+              "2"
+            ],
+            [
+              "V3",
+              "3"
+            ],
+            [
+              "V4",
+              "4"
+            ],
+            [
+              "V5",
+              "5"
+            ],
+            [
+              "V6",
+              "6"
+            ],
+            [
+              "V7",
+              "7"
+            ],
+            [
+              "V8",
+              "8"
+            ],
+            [
+              "V9",
+              "9"
+            ],
+            [
+              "V10",
+              "10"
+            ],
+            [
+              "V11",
+              "11"
+            ],
+            [
+              "V12",
+              "12"
+            ],
+            [
+              "V13",
+              "13"
+            ],
+            [
+              "V14",
+              "14"
+            ],
+            [
+              "V15",
+              "15"
+            ],
+            [
+              "V16",
+              "16"
+            ]
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "value"
+        },
+        {
+          "type": "input_dummy"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": '#00A06B',
+      "tooltip": Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_TOOLTIP,
+      "helpUrl": Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_HELPURL
+    });
   }
 };
 
-Blockly.Blocks['notify'] = {
+Blockly.Blocks['yolobit_blynk_notify'] = {
   init: function() {
-    this.appendValueInput("message")
-        .setCheck(null)
-        .appendField("gửi thông báo");
-    this.appendDummyInput();
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour('#00A06B');
- this.setTooltip("");
- this.setHelpUrl("");
+    this.jsonInit({
+      "type": "yolobit_blynk_notify",
+      "message0": Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_MESSAGE0,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "message"
+        },
+        {
+          "type": "input_dummy"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": '#00A06B',
+      "tooltip": Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_TOOLTIP,
+      "helpUrl": Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_HELPURL
+    });
   }
 };
 
-Blockly.Blocks['email'] = {
+Blockly.Blocks['yolobit_blynk_email'] = {
   init: function() {
-    this.appendValueInput("Email")
-        .setCheck(null)
-        .appendField("gửi email đến");
-    this.appendValueInput("Subject")
-        .setCheck(null)
-        .appendField("tiêu đề");
-    this.appendValueInput("Body")
-        .setCheck(null)
-        .appendField("nội dung");
-    this.appendDummyInput();
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour('#00A06B');
- this.setTooltip("");
- this.setHelpUrl("");
+    this.jsonInit({
+      "type": "yolobit_blynk_email",
+      "message0": Blockly.Msg.YOLOBIT_BLYNK_EMAIL_MESSAGE0,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "email"
+        },
+        {
+          "type": "input_value",
+          "name": "subject"
+        },
+        {
+          "type": "input_value",
+          "name": "body"
+        },
+        {
+          "type": "input_dummy"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": '#00A06B',
+      "tooltip": Blockly.Msg.YOLOBIT_BLYNK_EMAIL_TOOLTIP,
+      "helpUrl": Blockly.Msg.YOLOBIT_BLYNK_EMAIL_HELPURL
+    });
   }
 };
 
-Blockly.Blocks['blynk_run'] = {
+Blockly.Blocks['yolobit_blynk_run'] = {
   init: function() {
-    this.appendDummyInput()
-        .appendField("cập nhập từ Blynk");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour('#00A06B');
- this.setTooltip("");
- this.setHelpUrl("");
+    this.jsonInit({
+      "type": "yolobit_blynk_run",
+      "message0": Blockly.Msg.YOLOBIT_BLYNK_RUN_MESSAGE0,
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": '#00A06B',
+      "tooltip": Blockly.Msg.YOLOBIT_BLYNK_RUN_TOOLTIP,
+      "helpUrl": Blockly.Msg.YOLOBIT_BLYNK_RUN_HELPURL
+    });
   }
 };
 
@@ -103,7 +300,7 @@ Blockly.Python.addReservedWords('blynklib_mp');
 Blockly.Python.addReservedWords('network');
 Blockly.Python.addReservedWords('time');
 
-Blockly.Python['connect_blynk'] = function(block) {
+Blockly.Python['yolobit_blynk_connect'] = function(block) {
   Blockly.Python.definitions_['import_blynklib_mp'] = 'from blynklib_mp import *';
   Blockly.Python.definitions_['import_network'] = 'from network import *';
   Blockly.Python.definitions_['import_time'] = 'from time import *';
@@ -115,9 +312,9 @@ Blockly.Python['connect_blynk'] = function(block) {
   return '';
 };
 
-Blockly.Python['on_app_pin_write'] = function(block) {
-  var dropdown_v = block.getFieldValue('Pin');
-  var variable_value = Blockly.Python.variableDB_.getName(block.getFieldValue('VALUE'), Blockly.Variables.NAME_TYPE);
+Blockly.Python['yolobit_blynk_app_pin_write'] = function(block) {
+  var dropdown_v = block.getFieldValue('pin');
+  var variable_value = Blockly.Python.variableDB_.getName(block.getFieldValue('value'), Blockly.Variables.NAME_TYPE);
   var statements_action = Blockly.Python.statementToCode(block, 'handler');
 
   //Global variables except local variable
@@ -148,31 +345,31 @@ Blockly.Python['on_app_pin_write'] = function(block) {
   return "";
 };
 
-Blockly.Python['update_pin'] = function(block) {
-  var dropdown_name = block.getFieldValue('Pin');
-  var value_value = Blockly.Python.valueToCode(block, 'VALUE', Blockly.Python.ORDER_ATOMIC);
+Blockly.Python['yolobit_blynk_update_pin'] = function(block) {
+  var dropdown_name = block.getFieldValue('pin');
+  var value_value = Blockly.Python.valueToCode(block, 'value', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble Python into code variable.
   var code = 'blynk.virtual_write('+ dropdown_name + ', ' + value_value +')\n';
   return code;
 };
 
-Blockly.Python['notify'] = function(block) {
+Blockly.Python['yolobit_blynk_notify'] = function(block) {
   var value_message = Blockly.Python.valueToCode(block, 'message', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble Python into code variable.
   var code = 'blynk.notify(' + value_message + ')\n';
   return code;
 };
 
-Blockly.Python['email'] = function(block) {
-  var value_email = Blockly.Python.valueToCode(block, 'Email', Blockly.Python.ORDER_ATOMIC);
-  var value_subject = Blockly.Python.valueToCode(block, 'Subject', Blockly.Python.ORDER_ATOMIC);
-  var value_body = Blockly.Python.valueToCode(block, 'Body', Blockly.Python.ORDER_ATOMIC);
+Blockly.Python['yolobit_blynk_email'] = function(block) {
+  var value_email = Blockly.Python.valueToCode(block, 'email', Blockly.Python.ORDER_ATOMIC);
+  var value_subject = Blockly.Python.valueToCode(block, 'subject', Blockly.Python.ORDER_ATOMIC);
+  var value_body = Blockly.Python.valueToCode(block, 'body', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble Python into code variable.
   var code = "blynk.email(" + value_email + ", " + value_subject + ", " + value_body + ")\n";
   return code;
 };
 
-Blockly.Python['blynk_run'] = function(block) {
+Blockly.Python['yolobit_blynk_run'] = function(block) {
   // TODO: Assemble Python into code variable.
   var code = 'blynk.run()\n';
   return code;

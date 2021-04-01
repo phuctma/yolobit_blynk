@@ -1,29 +1,19 @@
-Blockly.Msg.YOLOBIT_BLE_START_TOOLTIP = 'phát bluetooth với tên được chọn';
-Blockly.Msg.YOLOBIT_BLE_START_MESSAGE0 = 'phát bluetooth với tên %1';
-Blockly.Msg.YOLOBIT_BLE_START_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_CONNECT_TOOLTIP = 'kết nối bluetooth tới Yolo:Bit khác';
-Blockly.Msg.YOLOBIT_BLE_CONNECT_MESSAGE0 = 'kết nối bluetooth tới %1';
-Blockly.Msg.YOLOBIT_BLE_CONNECT_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_REPL_TOOLTIP = 'bật bluetooth terminal và có thể lập trình từ mobile app';
-Blockly.Msg.YOLOBIT_BLE_REPL_MESSAGE0 = 'bật chế độ bluetooth terminal với tên %1';
-Blockly.Msg.YOLOBIT_BLE_REPL_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_SEND_TOOLTIP = 'gửi tin nhắn qua bluetooth đến Yolo:Bit khác';
-Blockly.Msg.YOLOBIT_BLE_SEND_MESSAGE0 = 'gửi %1 qua bluetooth';
-Blockly.Msg.YOLOBIT_BLE_SEND_MESSAGE1 = 'tin nhắn';
-Blockly.Msg.YOLOBIT_BLE_SEND_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_SEND_NAMEVALUE_TOOLTIP = 'gửi thông tin theo dạng (thông tin = giá trị) qua bluetooth đến Yolo:Bit khác';
-Blockly.Msg.YOLOBIT_BLE_SEND_NAMEVALUE_MESSAGE0 = 'gửi %1 = %2 qua bluetooth';
-Blockly.Msg.YOLOBIT_BLE_SEND_NAMEVALUE_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_TOOLTIP = 'Khai báo lệnh xử lý khi có nhận được thông tin gửi đến qua bluetooth.';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_MESSAGE0 = 'khi nhận được %1 từ bluetooth thì %2 %3 ';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_MESSAGE1 = 'tin nhắn';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_TOOLTIP = 'Khai báo lệnh xử lý khi có nhận được một số gửi đến qua bluetooth.';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_MESSAGE0 = 'khi nhận được %1 từ bluetooth thì %2 %3 ';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_MESSAGE1 = 'số';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_TOOLTIP = 'Khai báo lệnh xử lý khi có nhận được thông tin gửi đến qua bluetooth có dạng (tên=giá trị).';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_MESSAGE0 = 'khi nhận được %1 = %2 từ bluetooth thì %3 %4 ';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_MESSAGE1 = 'thông tin';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_MESSAGE2 = 'giá trị';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_HELPURL = '';
+Blockly.Msg.YOLOBIT_BLYNK_CONNECT_MESSAGE0 = "kết nối wifi %1 password %2 mã xác thực %3 %4"
+Blockly.Msg.YOLOBIT_BLYNK_CONNECT_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_CONNECT_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_MESSAGE0 = "khi app cập nhập %1 cho %2 %3 %4"
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_MESSAGE1 = "giá trị"
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_MESSAGE0 = "cập nhập %1 giá trị %2 %3"
+Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_MESSAGE0 = "gửi thông báo %1 %2"
+Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_EMAIL_MESSAGE0 = "gửi email đến %1 tiêu đề %2 nội dung %3 %4"
+Blockly.Msg.YOLOBIT_BLYNK_EMAIL_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_EMAIL_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_RUN_MESSAGE0 = "cập nhập từ Blynk"
+Blockly.Msg.YOLOBIT_BLYNK_RUN_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_RUN_HELPURL = ""
