@@ -1,6 +1,6 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category id="ble" name="BLYNK" colour="#00A06B" icon="mobile alternate">
-	  <block type="connect_blynk">
+	  <block type="yolobit_blynk_connect">
       <value name="wifi">
           <shadow type="text"><field name="TEXT">wifi</field></shadow>
       </value>
@@ -11,28 +11,28 @@
           <shadow type="text"><field name="TEXT">mã xác thực</field></shadow>
       </value>
     </block>
-    <block type="on_app_pin_write"></block>
-    <block type="update_pin">
-      <value name="VALUE">
+    <block type="yolobit_blynk_app_pin_write"></block>
+    <block type="yolobit_blynk_update_pin">
+      <value name="value">
           <shadow type="math_number"><field name="NUM">1234</field></shadow>
       </value>
     </block>
-    <block type="notify">
+    <block type="yolobit_blynk_notify">
       <value name="message">
           <shadow type="text"><field name="TEXT">nội dung thông báo</field></shadow>
       </value>
     </block>
-    <block type="email">
-      <value name="Email">
+    <block type="yolobit_blynk_email">
+      <value name="email">
           <shadow type="text"><field name="TEXT">test@test.com</field></shadow>
       </value>
-      <value name="Subject">
+      <value name="subject">
           <shadow type="text"><field name="TEXT">Tiêu đề</field></shadow>
       </value>
-      <value name="Body">
+      <value name="body">
           <shadow type="text"><field name="TEXT">Nội dung email</field></shadow>
       </value>
     </block>
-    <block type="blynk_run"></block>
+    <block type="yolobit_blynk_run"></block>
   </category>
 </xml>

@@ -1,29 +1,19 @@
-Blockly.Msg.YOLOBIT_BLE_START_TOOLTIP = 'start bluetooth with given name';
-Blockly.Msg.YOLOBIT_BLE_START_MESSAGE0 = 'start bluetooth with name %1';
-Blockly.Msg.YOLOBIT_BLE_START_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_CONNECT_TOOLTIP = 'connect to other yolobit via bluetooth by name';
-Blockly.Msg.YOLOBIT_BLE_CONNECT_MESSAGE0 = 'connect via bluetooth to %1';
-Blockly.Msg.YOLOBIT_BLE_CONNECT_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_REPL_TOOLTIP = 'start bluetooth terminal mode so that mobile can send code wirelessly';
-Blockly.Msg.YOLOBIT_BLE_REPL_MESSAGE0 = 'start bluetooth terminal with name %1';
-Blockly.Msg.YOLOBIT_BLE_REPL_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_SEND_TOOLTIP = 'send message via bluetooth to other Yolo:Bit';
-Blockly.Msg.YOLOBIT_BLE_SEND_MESSAGE0 = 'bluetooth send %1';
-Blockly.Msg.YOLOBIT_BLE_SEND_MESSAGE1 = 'message';
-Blockly.Msg.YOLOBIT_BLE_SEND_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_SEND_NAMEVALUE_TOOLTIP = 'send message with format (name=value) via bluetooth to other Yolo:Bit';
-Blockly.Msg.YOLOBIT_BLE_SEND_NAMEVALUE_MESSAGE0 = 'bluetooth send %1 = %2';
-Blockly.Msg.YOLOBIT_BLE_SEND_NAMEVALUE_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_TOOLTIP = 'Define what to do when receive a bluetooth message';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_MESSAGE0 = 'when receive %1 from bluetooth %2 %3';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_MESSAGE1 = 'message';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_MESSAGE_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_TOOLTIP = 'Define what to do when receive a number from bluetooth';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_MESSAGE0 = 'when receive %1 from bluetooth %2 %3';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_MESSAGE1 = 'number';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NUMBER_HELPURL = '';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_TOOLTIP = 'Define what to do when receive a bluetooth message with format (name=value)';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_MESSAGE0 = 'when receive %1 = %2 from bluetooth %3 %4';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_MESSAGE1 = 'name';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_MESSAGE2 = 'value';
-Blockly.Msg.YOLOBIT_BLE_ON_RECEIVE_NAMEVALUE_HELPURL = '';
+Blockly.Msg.YOLOBIT_BLYNK_CONNECT_MESSAGE0 = "connect wifi %1 password %2 with authentication key %3 %4"
+Blockly.Msg.YOLOBIT_BLYNK_CONNECT_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_CONNECT_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_MESSAGE0 = "when app update %1 for %2 %3 %4"
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_MESSAGE1 = "value"
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_APP_PIN_WRITE_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_MESSAGE0 = "update %1 value %2 %3"
+Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_UPDATE_PIN_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_MESSAGE0 = "send notifications %1 %2"
+Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_NOTIFY_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_EMAIL_MESSAGE0 = "send email to %1 with subject %2 body %3 %4"
+Blockly.Msg.YOLOBIT_BLYNK_EMAIL_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_EMAIL_HELPURL = ""
+Blockly.Msg.YOLOBIT_BLYNK_RUN_MESSAGE0 = "update from Blynk"
+Blockly.Msg.YOLOBIT_BLYNK_RUN_TOOLTIP = ""
+Blockly.Msg.YOLOBIT_BLYNK_RUN_HELPURL = ""
