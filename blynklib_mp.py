@@ -1,5 +1,3 @@
-__version__ = '0.2.6'
-
 import network
 import usocket as socket
 import utime as time
