@@ -1,7 +1,3 @@
-# Copyright (c) 2019-2020 Anton Morozenko
-# Copyright (c) 2015-2019 Volodymyr Shymanskyy.
-# See the file LICENSE for copying permission.
-
 __version__ = '0.2.6'
 
 import network
